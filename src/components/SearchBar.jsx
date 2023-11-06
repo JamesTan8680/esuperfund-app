@@ -11,7 +11,8 @@ function SearchBar({ setResults }) {
   //Fetch data based on user input
   const fetchData = async (value) => {
     //Construct URL for the News API request
-    const url = `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=${apiKey}`;
+    // const url = `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=${apiKey}`;
+    const url = `https://newsapi.org/v2/everything?q=tesla&from=2023-10-06&sortBy=publishedAt&apiKey=${apiKey}`;
 
     try {
       //GET request to the News API
